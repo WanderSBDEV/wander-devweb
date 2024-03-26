@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+padding: 0;
+
+
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>abaixo nav-menu>>>>>>>>>>>>>>>>>>>> */
+.navHlist{
+    position: relative;
+    list-style: none;
+    display: flex;
+
+    margin: 0;
+}
+
+ul.navHlist >li:last-child{
+    position: absolute;
+    right: 0;
+    /* margin-right: -5px; */
+}
+
+ul.navHlist >li:last-child>h2{
+    margin: 10px;
+    font-size: medium;
+}
+
+
+
+    .ativo1{
+        display: block;
+    text-decoration: none;
+    margin: 3px;
+    /* padding: 10px 35px; */
+    padding: 10px 1vw;
+    border-color: #438bc87a;
+    border-style: solid ;
+    border-width: 2px;
+    position: relative;
+    overflow: hidden;}
+
+    .ativo1:before{
+        content:'';
+        position: absolute;
+        background-color: #438bc87a;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .7s ease;
+    }
+
+
+
+    .ativo2:before {
+        width: 110%;
+        height: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    
+    .ativo2:hover:before {
+        height: 350%;
+    }
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima o nav-menu>>>>>>>>>>>>>>>>>>> */
+    /* <<<<<<<<<<<<<<<<<<<abaixo container com foto do autor e slogan>>>>>>>>>>>>>> */
+
+    .container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        /* background-color:rgba(128, 128, 128, 0.318); */
+        height: 500px;
+        position: relative;
+        margin-bottom: 250px;
+    }
+    video{
+        z-index: -1000;
+        width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    }
+    .autor{
+        height: 100%;
+        width: 50%;
+    }
+
+
+.hexa{
+    width: 336px;
+    border-radius: 30px;
+    height: 215px;
+    background: #fff;
+   
+    position: absolute;
+    top: 27%;
+    left: 4%;
+}
+.hexa::before, .hexa::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.hexa::before{
+    transform: rotate(60deg);
+}
+.hexa::after{
+    transform: rotate(-60deg);  
+}
+
+.imagem{
+  
+  padding: 0;
+    margin: 0;
+    /* width: 332px; */
+    width: 100%;
+    height: 100%;
+    background-image: url(./img2noBackground.png);
+   
+   
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    /* left: 4.4%; */
+    border-radius: 32px;
+
+
+
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+    .slogan{  
+        position: relative;
+      right: 0;
+        font-size: x-large;
+        z-index: 1;
+        text-align: center;
+        width: 37%;
+  height: 0;
+  border-bottom: 200px solid  rgba(255, 0, 0, 0.438);       
+  color: rgb(241, 241, 241);
+  border-left:200px solid transparent ;
+    }
+
+    @media screen and (max-width: 864px) {
+
+    .slogan{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        font-size: 100%;
+        border-bottom: 100px solid rgba(255, 0, 0, 0.438);
+border-left: none;
+    }
+
+    }
+
+
+    @media screen and (max-width: 370px) {
+        .hexa{
+            width: 225px;
+            border-radius: 30px;
+            height: 156px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexa::before, .hexa::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            position: absolute;
+            border-radius: 30px;
+        }
+        /* .imagem{
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+
+        }
+    
+
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< abaixo sobre autor>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+   
+   .so{position: relative;}
+.sobre{
+    overflow-x: auto;
+    direction: rtl;
+ 
+    margin-top:200px;
+    position: relative;
+    text-align: justify;
+   
+    
+    
+      width: 70%;
+
+margin-bottom: 200px;
+background-color: #438bc87a;
+clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 0% 100%);
+
+height: 347px;
+}
+
+.sobre::-webkit-scrollbar {
+    background-color: rgba(13, 255, 247, 0.1);
+    border-radius: 6px;
+    width: 5px;}
+
+
+    .sobre::-webkit-scrollbar-thumb {
+        background-color: rgb(0, 255, 238);
+        border-radius: 6px;}
+
+
+
+.sobre-paragrafo{
+    width: 60%;
+    position: relative;
+    right: 
+    36%;
+    font-size: large;
+    direction: ltr; 
+    /* word-spacing: -2px; */
+   
+}
+
+.sobre>h2{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    right: 63%;
+}
+
+@media screen and (max-width: 800px) {
+    .sobre>h2{ right: 54%;}
+}
+
+@media screen and (max-width: 400px) {
+    .sobre>h2{ right: 31%;}
+}
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< acima sobre autor>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< abaixo cards>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+
+
+
+.container-card{     /*<<< parte do container*/
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+}
+
+
+
+.card{
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 6px 7px 19px rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    transform: skewX(6deg);
+    margin-left: 50px;
+    
+
+  }
+.card>a{text-decoration: none;}
+ 
+
+  .imagem-card{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+  height: 215px;
+ 
+  
+  }
+
+  
+
+  .titleCard{
+     margin: 0;
+     border-style: solid;
+     border-width: 1px;
+     border-color: black;
+   
+     box-sizing: border-box;
+  }
+
+  .titleCard:hover {
+    background-color: #438bc87a;
+}
+
+
+  
+  .conteudo{
+    margin: 0;
+  }
+
+  
+ 
+
+.im1{
+    background-image: url("./pagina-curso\ de\ inglês.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -301px;
+}
+
+.im2{
+    background-image: url("./pagina-marketing-digital.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -21px;
+}
+
+
+.im3{
+    background-image: url("./pagina-higienização\ de\ estofados.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -76px;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< acima cards>>>>>>>>>>>>>>>>>>>>>>>>>>>>  */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<abaixo o footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.rodapé{
+    
+    display: flex;
+/* justify-content: space-between; */
+width: 80%;
+position: absolute;
+right: 0;
+margin-top: 200px;
+
+
+@media screen and (max-width: 600px) {
+    .rodapé{
+        flex-direction: column;
+    }
+}
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+border-top: 265px solid #438bc87a;       
+
+border-left:160px solid transparent ;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .rodapé{width: 100%;
+        border-left:0px solid transparent ;
+    }
+}
+
+.contatos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 103px;
+ 
+    bottom: 60px;
+    /* transform: translate(-50%, -50%); */
+}
+.cc{
+    margin: 5px;
+}
+
+.whats{ 
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url("./whatsapp-color-svgrepo-com.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.whats::after{
+    content: '+5566996175504';
+    position: absolute;
+    left: 70px;
+    top: 50%;
+}
+
+.face{
+    width: 50px;
+    height: 50px;
+    background-image: url("./facebook-color-svgrepo-com.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.face::after{
+    content: 'FACEBOOK';
+    position: absolute;
+    left: 70px;
+    /* top: 50%; */
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>abaixo os créditos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.créditos{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    flex-direction: column;
+}
+
+.créditos>p{
+    margin: 0;
+}
+@media screen and (max-width: 630px) {
+
+    .créditos{
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    bottom: -178px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+
+

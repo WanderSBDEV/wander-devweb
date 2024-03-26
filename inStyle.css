@@ -1,0 +1,318 @@
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+}
+.title>h2{
+    color: white;
+}
+
+.container-esquerdo{
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+    display: flex;
+   justify-content: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+.container-esquerdo>h1{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    line-height: 3rem;
+    font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.beneficios{
+    position: relative;
+    width: 63%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.beneficios>ul>li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Barlow", sans-serif;
+    margin: 10px;
+   
+}
+
+.beneficios>ul>li::before{
+    content:'';
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* background-color: blueviolet; */
+    background-image: url("./darts_2911314\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-esquerdo{width: 100%;
+justify-content: center;}
+.container{flex-direction: column;}
+    }
+
+.container{display: flex;}
+.container-direito{
+    background-image: url("https://img.freepik.com/fotos-gratis/mulher-frequentando-aula-online_23-2148854911.jpg?t=st=1709403468~exp=1709407068~hmac=3c9f6e6101359fdce48c311a8516aa80e8e8ba2e2eceb0a9af298b9411029d20&w=740");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    width: 50%;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<formulario>>>>>>>>>>>>>>>>>>>>> */
+
+
+.formContainer{
+    max-width: 230px;
+    background-color: rgba(128, 128, 128, 0.605);
+    padding: 20px;
+    float:right;
+
+}
+
+.formContainer>h2{
+    font-size: 16px;
+    color: white;
+}
+.mb{
+    margin-bottom: 15px;
+    color: white;
+}
+
+input, select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px !important;
+}
+
+input[type="submit"]{
+    color: white;
+    background-color: rgb(138, 138, 245);
+    font-weight: bold;
+}
+
+select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance:none;
+
+}
+@media screen and (max-width: 1000px){
+    .container-direito{
+        width: 100%;
+    }
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima formulario>>>>>>>>>>>>>>>>>>>>>>>>> */
+.container2{display: flex;
+justify-content: center;
+margin-top: 91px;
+margin-bottom: 91px;
+}
+.card-sub{width: 300px; display: flex; justify-content: center; }
+/* .card1{background-color: blue;  }
+.card2{background-color: red;}
+.card3{background-color: green;}
+.card4{background-color: yellow;} */
+
+
+
+
+.content{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px #26395338;
+}
+
+.title-card{
+    font-size: x-large;
+}
+
+.mediacard{
+    
+    background: url("") center/cover;
+    width: 100%;
+    height: 100px;
+}
+.fundo-A{
+    background-image: url("./hand-touching-doing-mark-five-yellow-stars-black-background-best-customer-satisfaction-evaluation-good-quality-product-service.jpg");
+}
+.fundo-B{
+background-image: url("./multi-ethnic-group-young-people-looking-tablet-computer.jpg");
+}
+.fundo-C{
+    background-image: url("./portrait-bearded-man-holding-documents.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+background-position-y:center;
+}
+.fundo-D{ background-image: url("./people-working-call-center.jpg")}
+
+.bottomcard{
+    padding: 20px;
+}
+
+.top-card{
+    padding: 20px;  
+}
+@media screen and (max-width: 840px) {.container2{display: none;}}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima cards normais>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.carro{display: flex;
+    position: relative;
+left: 50%;
+transform: translateX(-50%);
+    width: 300px;
+    margin-top: 91px;
+margin-bottom: 91px;
+display: none;
+}
+.carousel-indicators  [data-bs-target] { background-color: gray !important; }
+
+.carousel-control-next-icon{background-color: gray;border-radius: 50%;}
+.carousel-control-prev-icon{background-color: gray; border-radius: 50%;}
+/* .carousel-indicators{background-color: rgba(128, 128, 128, 0.364);} */
+
+@media screen and (max-width:840px) {.carro{display: block;}}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima cards carrosel>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 91px;
+margin-bottom: 91px;
+}
+.sobre{ background-color: rgba(128, 128, 128, 0.196); width: 500px; 
+    line-height: 140%;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.imagem{background-image: url("./joven-empresaria-recostada-sobre-su-mesa-trabajo-brazos-cruzados.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ width:500px; height: 500px; 
+
+}
+@media screen and (max-width:1000px) {.container3{flex-direction: column;}}
+@media screen and (max-width:515px) {.sobre{width: 100%;}
+.imagem{width: 100%;}
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima container3 com a parte de sobre>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+    .borda-curva {
+        background-color: white;
+        display: flex;
+        height: 150px;
+        border-radius: 0 0 180% 180%;
+        top: 75px;
+        z-index: 2; /* Adicione um valor de z-index apropriado aqui */
+        position: relative; /* Adicione position: relative; */
+    }
+    @media screen and (max-width:436px) {.borda-curva{display: none;}}
+.container4{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+   background-image: url("./6057263.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.contatos{
+    background-image: url("./");
+    /* background-color: aqua; */
+    /* height: 300px; */
+     width:50%;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+flex-wrap: wrap;
+   
+    }
+    @media screen and (max-width:780px) {.contatos{flex-direction: column;}}
+
+     .borda-curva>h3{
+       
+        position: relative;
+    
+     }
+.face{ border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("./8955.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+.whatsapp{
+    border-radius: 50%;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-image: url("./413349-PD6X0Q-89.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+.email{
+    border-radius: 50%;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background-image: url("./530.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
+
+
+.creditos{position: relative;
+    z-index: 3;
+     align-content: end;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    display: flex; 
+     /* flex-direction: column; */
+    width:50%; height: 300px; }
+    
+.creditosList1{ list-style: none;}
+.creditosList1>li>a{color: black;
+    font-size: xx-small;
+}
+.creditosList2{
+    font-size: xx-small;
+    list-style: none;
+}
+.creditosList2>li>a{color: black;
+    font-size: xx-small;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>acima o rodapé>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
